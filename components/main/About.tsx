@@ -5,14 +5,23 @@ import my from '../../public/yellow_croped.png';
 
 const About = () => {
     return (
+<<<<<<< HEAD
         <div className='container mx-auto mt-48 -lg:mt-32'>
             <div className=' mx-32 lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
                 <div className='flex-1 lg:mb-20 text-center mx-4'>
+=======
+        <div className='container mx-auto -mt-72 -lg:mt-32'>
+            <div className='flex flex-col lg:flex-row mx-32 lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
+>>>>>>> 4e8ba1b7106677bde270265e8d376111afd648e1
                 {/* Image */}
                 <motion.img
                     src={my.src}
                     alt="About"
+<<<<<<< HEAD
                     className="w-1/ lg:w-1/6 h-auto -mt-48 object-cover rounded-full mx-auto"
+=======
+                    className="w-1/ lg:w-1/6 h-auto -mt-48 object-cover rounded-full"
+>>>>>>> 4e8ba1b7106677bde270265e8d376111afd648e1
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once: false, amount: 0.3 }}
@@ -26,7 +35,11 @@ const About = () => {
                     className='flex-1 sm:mb-40 text-center'>
                     {/* <h2 className='h2 text-fuchsia-300 text-center mr-40'>About me.</h2> */}
                     {/* <h3 className='h3 mb-4'>I&apos;m an undergraduate Student at SLIIT </h3> */}
+<<<<<<< HEAD
                     <p className='mb-6 text-[24px] text-justify text-gray-400 mt-18 max-w-auto'>
+=======
+                    <p className='mb-6 text-[24px] text-justify text-gray-400 mt-32 max-w-auto'>
+>>>>>>> 4e8ba1b7106677bde270265e8d376111afd648e1
                     I&apos;m a dedicated Software Engineer, driven by a strong passion for developing innovative programs that enhance organizational efficiency and success. With a demonstrated ability to lead, motivate, and educate teams, I excel in managing projects effectively. Known for my hardworking nature and enthusiasm, I approach tasks with self-motivation. I possess excellent interpersonal and communication skills, allowing me to easily collaborate and work with others. With these qualities, I am confident in my ability to make a positive impact and contribute to the success of any organization.
                     </p>
                     {/* Stats */}

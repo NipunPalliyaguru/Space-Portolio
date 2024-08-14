@@ -37,7 +37,7 @@ const About = () => {
                             </div>
                             <div className='font-primary text-sm tracking-[3px] text-gray-200 my-5 max-w-[600px]'>
                                 Years of <br />
-                                Experience  
+                                Experience  &nbsp;
                                 
                                 <div className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'>4</div>
                             </div>
@@ -48,9 +48,40 @@ const About = () => {
                                 {/* Your content */}
                             </div>
                             <div className='font-primary text-sm tracking-[3px] text-gray-200 my-5 max-w-[600px]'>
-                                Projects <br />
+                                Customer Projects (Freelance)<br />
                                 Completed  
-                                <div className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'>6</div>
+                                <div className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'>20+</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                                {/* Your content */}
+                            </div>
+                            <div className='font-primary text-sm tracking-[3px] text-gray-200 my-5 max-w-[600px]'>
+                                Industrial Projects (Local)<br />
+                                Completed  
+                                <div className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'>3</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                                {/* Your content */}
+                            </div>
+                            <div className='font-primary text-sm tracking-[3px] text-gray-200 my-5 max-w-[600px]'>
+                                University Projects (SLIIT)<br />
+                                Completed  
+                                <div className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'>4</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                                {/* Your content */}
+                            </div>
+                            <div className='font-primary text-sm tracking-[3px] text-gray-200 my-5 max-w-[600px]'>
+                                Bootcamp Projects (Self)<br />
+                                Completed  
+                                <div className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'>10+</div>
                             </div>
                         </div>
                     </div>

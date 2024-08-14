@@ -50,8 +50,8 @@ const HeroContent = () => {
               <TypeAnimation
                 sequence={[
                   'Developer', 2000,
-                  'Dev Ops', 2000,
-                  'Cyber Ops', 2000,
+                  'DevOps', 2000,
+                  'CyberOps ', 2000,
                 ]}
                 speed={50}
                 className="text-gradient"

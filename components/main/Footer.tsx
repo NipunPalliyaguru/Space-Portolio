@@ -24,7 +24,7 @@ const Footer = () => {
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                         <RxLinkedinLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin<a href="https://www.linkedin.com/in/nipun-palliyaguru-98a470216/" target="_blanck"></a></span>    
+                        <span className="text-[15px] ml-[6px]"><a href="https://www.linkedin.com/in/nipun-palliyaguru-98a470216/" target="_blanck">Linkedin</a></span>    
                     </p>     
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                         <FaYoutube />

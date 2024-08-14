@@ -17,7 +17,7 @@ const Projects = () => {
       </h1>
       <div className="h-A w-full flex flex-col md:flex-row gap-10 px-10 justify-center">
         <ProjectCard
-          link="https://github.com/NipunPalliyaguru/Happy-Tails-Pet-Shelter-Management-System-ITP"
+          link="https://happytails-six.vercel.app/"
           src="/PETSM.png"
           title="Happy Tails - Pet Shelter Management System"
           description="Happy Tails is a project developed using the MERN (MongoDB, Express.js, React.js, Node.js). It serves as an online platform for managing a pet shelter located in Kandy, Sri Lanka. "

@@ -36,7 +36,7 @@ const Projects = () => {
         />
       </div>
 
-      <div className="h-A w-full flex flex-col md:flex-row gap-10 px-10 my-10">
+      {/* <div className="h-A w-full flex flex-col md:flex-row gap-10 px-10 my-10">
         <ProjectCard
           link="https://github.com/NipunPalliyaguru/Online-Fuel-Management-System"
           src="/mad.png"
@@ -55,7 +55,7 @@ const Projects = () => {
           title="Space Themed Website"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -85,6 +85,34 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Personal Interests */}
+                    <motion.div
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{ once: false, amount: 0.3 }}
+                        className='mt-16 mb-10'
+                    >
+                        <h2 className='text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-6 text-center'>
+                            Personal Interests
+                        </h2>
+                        <div className='flex flex-wrap justify-center gap-4'>
+                            {[
+                                "Exploring AI in Web & Mobile Applications",
+                                "Technical Blogging & Developer Advocacy",
+                                "Teaching, Mentoring, and Public Speaking",
+                                "Cloud Architecture & DevOps Trends",
+                                "Cycling, Hiking, and Nature Photography"
+                            ].map((interest, index) => (
+                                <span
+                                    key={index}
+                                    className='bg-[#7042f88b] text-gray-200 px-4 py-2 rounded-full text-sm border border-[#7042f88b] hover:border-[#F7E976] transition-colors'
+                                >
+                                    {interest}
+                                </span>
+                            ))}
+                        </div>
+                    </motion.div>
                 </motion.div>
             </div>
         </div>

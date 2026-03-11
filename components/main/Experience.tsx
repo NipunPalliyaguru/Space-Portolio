@@ -1,10 +1,11 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import my from "../../public/epic.jpeg";
 
 const Experience = () => {
-    
   const experiences = [
     {
         name: "AXONALL",
@@ -122,99 +123,135 @@ const Experience = () => {
 
 
   return (
-    <div className="w-full max-w-7xl mx-auto -mt-20 px-3 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-      <h1 
-        id="Experience" 
-        className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-center text-gray-200 mb-12 xs:mb-16 sm:mb-20 md:mb-24 lg:mb-28 xl:mb-32"
-      >
-        Experience
-      </h1>
-      
-      <div className="flex flex-col gap-8 xs:gap-10 sm:gap-12 md:gap-16 lg:gap-20">
-        {experiences.map((experience, index) => (
-          <div
-            key={index}
-            className="group w-full bg-gradient-to-br from-[#151030] to-[#0f0a1f] text-white rounded-2xl xs:rounded-3xl shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)] transition-all duration-500 overflow-hidden border border-gray-800/50 hover:border-indigo-500/30 relative"
-            style={{ maxWidth: "1300px", margin: "0 auto" }}
-          >
-            {/* Gradient overlay for enhanced visual appeal */}
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            {/* Header Section */}
-            <div className="relative z-10 flex flex-col xs:flex-row gap-3 xs:gap-4 sm:gap-6 p-4 xs:p-5 sm:p-6 md:p-8">
-              {/* Company Info */}
-              <div className="flex-1 min-w-0">
-                <div className="bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 flex items-center py-2 xs:py-3 sm:py-4 px-3 xs:px-4 sm:px-6 rounded-full xs:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="relative">
-                    <img
-                      src={experience.icon}
-                      alt={`${experience.name} logo`}
-                      className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full object-cover flex-shrink-0 ring-2 ring-white/20 hover:ring-white/40 transition-all duration-300"
-                    />
-                    <div className="absolute -inset-1 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm"></div>
-                  </div>
-                  <div className="flex flex-col ml-2 xs:ml-3 sm:ml-4 min-w-0 flex-1">
-                    <p className="text-white font-bold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl truncate drop-shadow-sm">
-                      {experience.name}
-                    </p>
-                    <p className="text-white/90 text-xs xs:text-sm sm:text-base md:text-lg font-medium">
-                      {experience.working_type}
-                    </p>
-                  </div>
+    <section className="w-full max-w-7xl mx-auto -mt-10 sm:-mt-16 px-3 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+      <div className="text-center">
+        <h1
+          id="Experience"
+          className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-cyan-400"
+        >
+          Experience
+        </h1>
+        <p className="mt-4 text-sm xs:text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+          A timeline of roles and impact — focused on scalable systems, cloud,
+          and product delivery.
+        </p>
+      </div>
+
+      <div className="relative mt-12 sm:mt-16">
+        {/* Timeline spine */}
+        <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+
+        <div className="flex flex-col gap-4 sm:gap-5">
+          {experiences.map((experience, index) => {
+            const isRight = index % 2 === 0;
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.25 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className={[
+                  "relative grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6",
+                  isRight ? "" : "sm:[&>div:last-child]:order-first",
+                ].join(" ")}
+              >
+                {/* Timeline node */}
+                <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-5 sm:top-6 z-20">
+                  <div className="h-3 w-3 rounded-full bg-gradient-to-r from-indigo-400 via-purple-500 to-cyan-400 shadow-[0_0_0_4px_rgba(255,255,255,0.04)]" />
                 </div>
-              </div>
-              
-              {/* Date Badge */}
-              <div className="bg-gradient-to-r from-[#F7E976] to-[#F4E55C] text-black px-3 xs:px-4 sm:px-6 py-2 xs:py-3 sm:py-4 font-bold rounded-full xs:rounded-2xl flex items-center justify-center gap-2 min-w-fit shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:from-[#F4E55C] hover:to-[#F1E042]">
-                <FaRegCalendarAlt className="text-xs xs:text-sm sm:text-base md:text-lg" />
-                <span className="text-xs xs:text-sm sm:text-base md:text-lg whitespace-nowrap font-semibold">
-                  {experience.year}
-                </span>
-              </div>
-            </div>
 
-            {/* Job Title */}
-            <div className="relative z-10 px-4 xs:px-5 sm:px-6 md:px-8 pb-4 xs:pb-5 sm:pb-6">
-              <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent drop-shadow-sm">
-                {experience.title}
-              </h3>
-            </div>
+                <div className="hidden sm:block" />
 
-            {/* Details Section */}
-            <div className="relative z-10 px-4 xs:px-5 sm:px-6 md:px-8 pb-4 xs:pb-5 sm:pb-6">
-              <div className="space-y-3 xs:space-y-4 sm:space-y-5">
-                {experience.details.map((detail, detailIndex) => (
-                  <div key={detailIndex} className="flex items-start gap-3 xs:gap-4 sm:gap-5 group/detail">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover/detail:scale-110 transition-transform duration-300">
-                        <MdKeyboardDoubleArrowRight className="text-white text-sm xs:text-base sm:text-lg md:text-xl" />
+                <div
+                  className={[
+                    "group relative overflow-hidden rounded-lg border",
+                    "bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm",
+                    "border-gray-700/50 shadow-xl transition-all duration-500",
+                    "hover:border-cyan-400/40 hover:shadow-cyan-500/10",
+                    "p-4 sm:p-5",
+                  ].join(" ")}
+                >
+                  {/* Ambient glow */}
+                  <div className="pointer-events-none absolute -inset-24 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl" />
+
+                  {/* Header */}
+                  <div className="relative z-10 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <img
+                        src={experience.icon}
+                        alt={`${experience.name} logo`}
+                        className="h-9 w-9 sm:h-10 sm:w-10 rounded-lg object-cover ring-1 ring-white/10 flex-shrink-0"
+                      />
+                      <div className="min-w-0">
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                          <div className="text-white font-semibold text-sm sm:text-base truncate">
+                            {experience.name}
+                          </div>
+                          <span className="text-[10px] sm:text-xs text-gray-200/80 border border-white/10 bg-white/5 px-1.5 py-0.5 rounded">
+                            {experience.working_type}
+                          </span>
+                        </div>
+                        <div className="text-xs sm:text-sm font-medium text-gray-300">
+                          {experience.title}
+                        </div>
                       </div>
                     </div>
-                    <p className="text-gray-200 text-sm xs:text-base sm:text-lg md:text-xl leading-relaxed group-hover/detail:text-white transition-colors duration-300">
-                      {detail}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
 
-            {/* Tech Stack Section */}
-            <div className="relative z-10 px-4 xs:px-5 sm:px-6 md:px-8 pb-4 xs:pb-5 sm:pb-6">
-              <div className="flex flex-wrap gap-2 xs:gap-3 sm:gap-4 justify-center xs:justify-start">
-                {experience.techs.map((tech, techIndex) => (
-                  <div
-                    key={techIndex}
-                    className="group/tech relative bg-gradient-to-r from-[#F7E976] to-[#F4E55C] text-black px-3 xs:px-4 sm:px-5 md:px-6 py-1.5 xs:py-2 sm:py-3 rounded-full xs:rounded-xl text-xs xs:text-sm sm:text-base md:text-lg font-semibold hover:from-[#F4E55C] hover:to-[#F1E042] transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-default"
-                  >
-                    <span className="relative z-10">{tech}</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-full xs:rounded-xl opacity-0 group-hover/tech:opacity-100 transition-opacity duration-300"></div>
+                    <div className="sm:ml-auto inline-flex items-center gap-1.5 rounded border border-white/10 bg-white/5 px-2 py-1.5 text-[11px] sm:text-xs text-gray-200/90">
+                      <FaRegCalendarAlt className="text-gray-200/80" />
+                      <span className="whitespace-nowrap">{experience.year}</span>
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
+
+                  {/* Details */}
+                  <div className="relative z-10 mt-3 space-y-1.5">
+                    {experience.details.map((detail, detailIndex) => (
+                      <div
+                        key={detailIndex}
+                        className="flex items-start gap-2 text-gray-200/90"
+                      >
+                        <div className="mt-0.5 flex-shrink-0 h-4 w-4 rounded-sm bg-gradient-to-r from-indigo-500/70 to-cyan-500/70 flex items-center justify-center">
+                          <MdKeyboardDoubleArrowRight className="text-white text-[10px]" />
+                        </div>
+                        <p className="text-xs sm:text-sm leading-snug">
+                          {detail}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Techs + Projects inline */}
+                  <div className="relative z-10 mt-3 flex flex-wrap items-center gap-1.5">
+                    {experience.techs.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="text-[10px] sm:text-xs text-gray-200/90 border border-white/10 bg-black/20 px-2 py-1 rounded hover:border-cyan-400/30 hover:bg-cyan-500/10 transition-colors duration-300"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                    {experience.projects?.length ? (
+                      <>
+                        <span className="text-gray-500/60 text-[10px]">·</span>
+                        {experience.projects.map((p, pIndex) => (
+                          <span
+                            key={pIndex}
+                            className="text-[10px] sm:text-xs font-medium text-black bg-gradient-to-r from-[#F7E976] to-[#F4E55C] px-2 py-1 rounded"
+                          >
+                            {p}
+                          </span>
+                        ))}
+                      </>
+                    ) : null}
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

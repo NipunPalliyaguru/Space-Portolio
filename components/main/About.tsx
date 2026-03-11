@@ -85,7 +85,7 @@ const About = () => {
                     >
                         {/* Years of Experience */}
                         <motion.div 
-                            className='group relative bg-gradient-to-br from-indigo-900/30 to-purple-900/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-indigo-500/30 hover:border-indigo-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/20'
+                            className='group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-gray-700/50 hover:border-indigo-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/20'
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}
                         >
@@ -108,7 +108,7 @@ const About = () => {
 
                         {/* Customer Projects */}
                         <motion.div 
-                            className='group relative bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20'
+                            className='group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-gray-700/50 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20'
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}
                         >
@@ -132,7 +132,7 @@ const About = () => {
 
                         {/* Industrial Projects */}
                         <motion.div 
-                            className='group relative bg-gradient-to-br from-pink-900/30 to-red-900/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-pink-500/30 hover:border-pink-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20'
+                            className='group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-gray-700/50 hover:border-pink-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20'
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}
                         >
@@ -156,7 +156,7 @@ const About = () => {
 
                         {/* University Projects */}
                         <motion.div 
-                            className='group relative bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-cyan-500/30 hover:border-cyan-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20'
+                            className='group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20'
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}
                         >
@@ -180,7 +180,7 @@ const About = () => {
 
                         {/* Bootcamp Projects */}
                         <motion.div 
-                            className='group relative bg-gradient-to-br from-green-900/30 to-emerald-900/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-green-500/30 hover:border-green-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20'
+                            className='group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl xs:rounded-3xl p-4 xs:p-6 border border-gray-700/50 hover:border-green-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20'
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}
                         >

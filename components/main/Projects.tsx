@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
 import { motion } from "framer-motion";
+import IndustrialProjects from "./IndustrialProjects";
+import CampusResearch from "./CampusResearch";
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -35,6 +38,9 @@ const Projects = () => {
           description="Recipe Management Systems is a project developed using the MERN (MongoDB, Express.js, React.js, Node.js). It serves as an online platform for managing recipes."
         />
       </div>
+
+      <CampusResearch />
+      <IndustrialProjects />
 
       {/* <div className="h-A w-full flex flex-col md:flex-row gap-10 px-10 my-10">
         <ProjectCard

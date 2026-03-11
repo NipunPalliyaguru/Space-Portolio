@@ -39,8 +39,10 @@ const Projects = () => {
         />
       </div>
 
-      <CampusResearch />
-      <IndustrialProjects />
+      <div className="w-full flex flex-col gap-10 sm:gap-14 lg:gap-16 mt-8 sm:mt-12">
+        <CampusResearch />
+        <IndustrialProjects />
+      </div>
 
       {/* <div className="h-A w-full flex flex-col md:flex-row gap-10 px-10 my-10">
         <ProjectCard

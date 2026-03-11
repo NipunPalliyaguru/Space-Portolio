@@ -9,7 +9,7 @@ const Experience = () => {
   const experiences = [
     {
         name: "AXONALL",
-        icon: "https://media.licdn.com/dms/image/v2/D560BAQHjx_2BgRLEGg/company-logo_200_200/B56ZfgS7PeG0AU-/0/1751814747814/axonall_logo?e=1762387200&v=beta&t=_E44DZ6pVgj7_36a9LekL5uSeclD3yUkAgvvr8-fXM0", 
+        icon: "https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/595245247_122109438759123979_7927910765246886401_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=X0GTotI1X6EQ7kNvwFToNW-&_nc_oc=Adk77lOa7A-MClgEgE5Yxe-9ZIrn7wSWItcx3U71kAHH2S7ZufupnF69OOg22TXCK0c&_nc_zt=23&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=0Uu3ilkkeql9tRx9m2owTQ&_nc_ss=8&oh=00_AfwTAdnqjkOeFyzVmO93JqkyW0Wg1ZQrcwFBr9QOTB7yuw&oe=69B6E3FB", 
         title: "Software Engineer",
         working_type: "Full Time",
         year: "January 2025 - Present",
@@ -25,7 +25,7 @@ const Experience = () => {
     },
     {
         name: "BotMedFusion",
-        icon: "https://media.licdn.com/dms/image/v2/D560BAQHlgpoUXEnRSQ/company-logo_200_200/company-logo_200_200/0/1692042539560?e=1762387200&v=beta&t=CdukHvOo8AU1K9Q63POMRPm8wN5fWvl1G4PGjighbiY", 
+        icon: "https://media.licdn.com/dms/image/v2/D560BAQHlgpoUXEnRSQ/company-logo_200_200/company-logo_200_200/0/1692042539560?e=1775088000&v=beta&t=-7wqleXScsmgY1zulTuQeCI3ln8Tc3PAqywfKbqa8pU", 
         title: "Software Engineer",
         working_type: "Full Time",
         year: "October 2024 - Present",
@@ -57,7 +57,7 @@ const Experience = () => {
     },
     {
         name: "DMS Software Technologies (Pvt) Ltd",
-        icon: "https://media.licdn.com/dms/image/C560BAQH00MCBWLYYyA/company-logo_200_200/0/1631348879206?e=1731542400&v=beta&t=vjH89OmT24nD1x6JaH2rVY4SoRm74IpVzS6BqgZ4I1U", 
+        icon: "https://media.licdn.com/dms/image/v2/C560BAQEmN27_CaawNQ/company-logo_200_200/company-logo_200_200/0/1630662445467/dms_software_technologies_pvt_ltd_logo?e=1775088000&v=beta&t=JLysvxwsO_34I85XCbBRND775OM5Ak91bkC3WfTG9ow",
         title: "Associate Software Engineer",
         working_type: "Full Time",
         year: "July 2024 - September 2024",
@@ -73,7 +73,7 @@ const Experience = () => {
     },
     {
         name: "EPIC LANKA PVT LTD",
-        icon: "https://media.licdn.com/dms/image/C560BAQH00MCBWLYYyA/company-logo_200_200/0/1631348879206?e=1731542400&v=beta&t=vjH89OmT24nD1x6JaH2rVY4SoRm74IpVzS6BqgZ4I1U", 
+        icon: "https://media.licdn.com/dms/image/v2/C560BAQH00MCBWLYYyA/company-logo_200_200/company-logo_200_200/0/1631348879206?e=1775088000&v=beta&t=XyJe6-RamV20KpK77tnuvLQHXGM6kl4tdkYigmuyi1U", 
         title: "Associate Software Developer",
         working_type: "Full Time",
         year: "January 2024 - July 2024",
@@ -89,7 +89,7 @@ const Experience = () => {
     },
     {
         name: "EPIC LANKA PVT LTD",
-        icon: "https://media.licdn.com/dms/image/C560BAQH00MCBWLYYyA/company-logo_200_200/0/1631348879206?e=1731542400&v=beta&t=vjH89OmT24nD1x6JaH2rVY4SoRm74IpVzS6BqgZ4I1U", 
+        icon: "https://media.licdn.com/dms/image/v2/C560BAQH00MCBWLYYyA/company-logo_200_200/company-logo_200_200/0/1631348879206?e=1775088000&v=beta&t=XyJe6-RamV20KpK77tnuvLQHXGM6kl4tdkYigmuyi1U", 
         title: "Software Engineer Trainee",
         working_type: "Full Time",
         year: "May 2023 - January 2024",
@@ -123,7 +123,7 @@ const Experience = () => {
 
 
   return (
-    <section className="w-full max-w-7xl mx-auto -mt-10 sm:-mt-16 px-3 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+    <section className="w-full max-w-7xl mx-auto -mt-6 sm:-mt-10 px-3 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
       <div className="text-center">
         <h1
           id="Experience"
@@ -137,11 +137,11 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className="relative mt-12 sm:mt-16">
+      <div className="relative mt-7 sm:mt-10">
         {/* Timeline spine */}
         <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent" />
 
-        <div className="flex flex-col gap-4 sm:gap-5">
+        <div className="flex flex-col gap-3 sm:gap-4">
           {experiences.map((experience, index) => {
             const isRight = index % 2 === 0;
             return (
@@ -152,12 +152,12 @@ const Experience = () => {
                 viewport={{ once: false, amount: 0.25 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className={[
-                  "relative grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6",
+                  "relative grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-5",
                   isRight ? "" : "sm:[&>div:last-child]:order-first",
                 ].join(" ")}
               >
                 {/* Timeline node */}
-                <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-5 sm:top-6 z-20">
+                <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-4.5 sm:top-5 z-20">
                   <div className="h-3 w-3 rounded-full bg-gradient-to-r from-indigo-400 via-purple-500 to-cyan-400 shadow-[0_0_0_4px_rgba(255,255,255,0.04)]" />
                 </div>
 
@@ -205,7 +205,7 @@ const Experience = () => {
                   </div>
 
                   {/* Details */}
-                  <div className="relative z-10 mt-3 space-y-1.5">
+                  <div className="relative z-10 mt-3 space-y-2.5">
                     {experience.details.map((detail, detailIndex) => (
                       <div
                         key={detailIndex}
@@ -214,7 +214,7 @@ const Experience = () => {
                         <div className="mt-0.5 flex-shrink-0 h-4 w-4 rounded-sm bg-gradient-to-r from-indigo-500/70 to-cyan-500/70 flex items-center justify-center">
                           <MdKeyboardDoubleArrowRight className="text-white text-[10px]" />
                         </div>
-                        <p className="text-xs sm:text-sm leading-snug">
+                        <p className="text-xs sm:text-sm leading-relaxed">
                           {detail}
                         </p>
                       </div>

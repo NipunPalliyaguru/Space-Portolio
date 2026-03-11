@@ -12,7 +12,7 @@ interface Props {
 const ProjectCard = ({ src, title, description,link }: Props) => {
   return (
     
-    <a href={link} target="_blanck"  className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
+    <a href={link} target="_blanck"  className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] hover:scale-105 transition-transform duration-300">
       <Image
         src={src}
         alt={title}
@@ -21,9 +21,9 @@ const ProjectCard = ({ src, title, description,link }: Props) => {
         className="w-full object-contain"
       />
 
-      <div className="relative p-4">
-        <h1 className="text-lg font-semibold text-white">{title}</h1>
-        <p className="mt-2 text-gray-300 text-justify">{description}</p>
+      <div className="relative p-3 sm:p-4">
+        <h1 className="text-base sm:text-lg font-semibold text-white mb-2">{title}</h1>
+        <p className="text-sm sm:text-base text-gray-300 text-justify leading-relaxed">{description}</p>
       </div>
     </a>
   );

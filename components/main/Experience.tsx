@@ -251,6 +251,103 @@ const Experience = () => {
           })}
         </div>
       </div>
+
+      {/* Travel & GDS expertise section */}
+      <div className="mt-12 sm:mt-16">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-lg sm:text-2xl lg:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-indigo-300 to-purple-300">
+            Travel & GDS Expertise
+          </h2>
+          <p className="mt-3 text-xs sm:text-sm md:text-base text-gray-300">
+            Hands-on experience integrating{" "}
+            <span className="font-semibold text-cyan-300">Sabre</span> and{" "}
+            <span className="font-semibold text-cyan-300">Booking.com</span>{" "}
+            global distribution systems (GDS) for end‑to‑end travel products:
+            hotels, flights, private jets & yachts, and ground transportation.
+          </p>
+        </div>
+
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          {[
+            {
+              title: "Hotels & Stays",
+              subtitle: "GDS hotel content & dynamic pricing",
+              img: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=70",
+              points: [
+                "Pulled real-time hotel inventory via Sabre & Booking.com APIs.",
+                "Implemented rate plans, room mappings, and cancellation rules.",
+              ],
+            },
+            {
+              title: "Flights & GDS",
+              subtitle: "Multi‑segment itineraries & ancillaries",
+              img: "https://media.istockphoto.com/id/1457441464/photo/luxury-private-jet.jpg?s=612x612&w=0&k=20&c=R-hqLQXNcMZUUqL9rwR3cadol5w_7oO27lUujn5FHxQ=",
+              points: [
+                "Worked with GDS flows for availability, pricing, and ticketing.",
+                "Supported fare rules, baggage, and PNR life‑cycle operations.",
+              ],
+            },
+            {
+              title: "Private Jets & Yachts",
+              subtitle: "High‑touch luxury travel products",
+              img: "https://media.istockphoto.com/id/2209853704/photo/a-beautiful-bay-of-fteri-beach-kefalonia.jpg?s=1024x1024&w=is&k=20&c=Ql9AyTf7bhh-2wl-eX5MGBkOLT9_lCXZgP_yFZggFgI=",
+              points: [
+                "Modeled charter products with complex availability patterns.",
+                "Built inquiry and confirmation flows for premium customers.",
+              ],
+            },
+            {
+              title: "Ground Transportation",
+              subtitle: "Cars, transfers & local mobility",
+              img: "https://c.ndtvimg.com/2021-04/7ng7lr7g_hype-luxury-mobility-rentals_625x300_27_April_21.jpg",
+              points: [
+                "Integrated car and transfer options alongside air & hotel.",
+                "Unified booking flows across multiple transportation partners.",
+              ],
+            },
+          ].map((card) => (
+            <div
+              key={card.title}
+              className="group relative overflow-hidden rounded-2xl border border-gray-700/60 bg-gradient-to-b from-gray-900/80 to-gray-900/40 backdrop-blur-md shadow-2xl hover:border-cyan-400/60 hover:shadow-cyan-500/30 transition-all duration-500"
+            >
+              <div className="relative h-40 sm:h-48 lg:h-56 w-full overflow-hidden">
+                <img
+                  src={card.img}
+                  alt={card.title}
+                  loading="lazy"
+                  className="h-full w-full object-cover opacity-80 group-hover:opacity-95 transition-opacity duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
+                <div className="absolute bottom-3 left-4 right-4">
+                  <div className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300/90">
+                    Certified Travel Domain
+                  </div>
+                  <div className="text-base sm:text-xl font-semibold text-white">
+                    {card.title}
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-5 sm:p-6 space-y-3">
+                <div className="text-sm sm:text-base text-gray-200">
+                  {card.subtitle}
+                </div>
+                <ul className="space-y-2">
+                  {card.points.map((p) => (
+                    <li
+                      key={p}
+                      className="flex gap-2.5 text-xs sm:text-sm text-gray-100"
+                    >
+                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-cyan-400/90 flex-shrink-0" />
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

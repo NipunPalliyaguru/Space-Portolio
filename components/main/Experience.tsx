@@ -9,7 +9,7 @@ const Experience = () => {
   const experiences = [
     {
         name: "AXONALL",
-        icon: "https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/595245247_122109438759123979_7927910765246886401_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=X0GTotI1X6EQ7kNvwFToNW-&_nc_oc=Adk77lOa7A-MClgEgE5Yxe-9ZIrn7wSWItcx3U71kAHH2S7ZufupnF69OOg22TXCK0c&_nc_zt=23&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=0Uu3ilkkeql9tRx9m2owTQ&_nc_ss=8&oh=00_AfwTAdnqjkOeFyzVmO93JqkyW0Wg1ZQrcwFBr9QOTB7yuw&oe=69B6E3FB", 
+        icon: "https://media.licdn.com/dms/image/v2/D560BAQHjx_2BgRLEGg/company-logo_200_200/B56ZfgS7PeG0AU-/0/1751814747814/axonall_logo?e=1775692800&v=beta&t=GnAMhIrnJJJ0kTZmQA-e5OIIzd0hTDwCZzQdGjlcv3w", 
         title: "Software Engineer",
         working_type: "Full Time",
         year: "January 2025 - Present",
@@ -105,7 +105,7 @@ const Experience = () => {
     },
     {
         name: "Bank of Ceylon",
-        icon: "https://media.licdn.com/dms/image/C560BAQH00MCBWLYYyA/company-logo_200_200/0/1631348879206?e=1731542400&v=beta&t=vjH89OmT24nD1x6JaH2rVY4SoRm74IpVzS6BqgZ4I1U", 
+        icon: "https://media.licdn.com/dms/image/v2/C4E0BAQGo8tnBeWXytg/company-logo_200_200/company-logo_200_200/0/1631328201943?e=1775692800&v=beta&t=fosqsBQbjJV4StUeMEykTVOiUGZg0BNILLF4PFzr37M", 
         title: "Bank Trainee",
         working_type: "Part-Time",
         year: "January 2017 - February 2018",
